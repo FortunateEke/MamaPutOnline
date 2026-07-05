@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mama Put Online</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link"> Skip to main content </a>
+    <!-- ============================================================
+            PROMPT 1 — STICKY NAVIGATION BAR
+
+            "Create a sticky responsive navigation bar.
+            Left Section: MamaPutOnline Logo
+            Center Section: Products, Services, Customer Service, Contact Us
+            Right Section: Search Input Field
+            Requirements: Dark Red Background, White Text, Gold Hover Effects,
+            Sticky Top Position, Mobile Responsive, Semantic HTML"
+            ============================================================ \
+        -->
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#" class="brand">
+          <img
+            src="images/LOGO.jpeg"
+            alt="Mama Put Online Logo"
+            class="brand-logo"
+          />
+          <div class="brand-name">
+            <strong>MamaPut<span class="brand-name-span">Online</span></strong>
+          </div>
+        </a>
+
+        <nav class="nav-links" id="primary-nav">
+          <a href="#products">Products</a>
+          <a href="#services">Services</a>
+          <a href="#customer-service">Customer Service</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+
+        <div class="nav-actions">
+            <div class="nav-search">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input
+                type="search"
+                placeholder="Search dishes..."
+                aria-label="Search"
+                />
+            </div>
+            <button
+                class="nav-toggle"
+                aria-expanded="false"
+                aria-controls="primary-nav"
+            >
+                <span></span><span></span><span></span>
+            </button>
+      </div>
+    </header>
+
+    <!-- ============================================================
+             PROMPT 2 — HERO SECTION
+
+             "Create a modern responsive Hero Section.
+             Height: Minimum 30vh. Width: 100%. Layout: Two Columns.
+             Left Side: High-quality image of steaming Nigerian food.
+             Right Side: Large heading 'Authentic Nigerian Meals Delivered 
+             Fresh To Your Doorstep', Supporting text, CTA Button 'Order Now'.
+             Use modern typography and strong visual hierarchy."
+             ============================================================ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Authentic Nigerian Meals</span>
+          <h1>
+            Authentic & Delicious Nigerian Meals Delivered Fresh To Your
+            <span class="accent">Doorstep</span>
+          </h1>
+          <p class="lead">
+            From our kitchen to your table, experience the rich, bold flavors of
+            Nigeria's delicious homemade dishes. Prepared with love using fresh,
+            locally sourced ingredients, and delivered hot to your door.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>100+</strong>
+              <span>Menu Items</span>
+            </div>
+            <div class="stat">
+              <strong>30min</strong>
+              <span>Delivery Time</span>
+            </div>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#products" class="btn btn-primary">Order Now</a>
+            <a href="#menu" class="btn btn-ghost">View Menu</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img src="images/PAGE.jpg" alt="Steaming Nigerian food spread" />
+          <div class="hero-badge">
+            <strong>100%</strong>
+            <span>Authentic</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="main-content">
+      <!-- ============================================================
+        PROMPT 3. PRODUCT SHOWCASE SECTION (Wrapper - From Site 2)
+        Contains Sidebar + Product Grid
+        ============================================================ -->
+      <section class="product-showcase" id="products">
+        <div class="container">
+          <h2 class="section-title">Explore Our Dishes</h2>
+
+          <div class="product-layout">
+            <!-- ============================================================
+             PROMPT 5 + 6 + 7 + 8 — PRODUCT SHOWCASE
+             Combines: Sidebar Navigation, Product Grid, Product Cards,
+             and Product Data into one cohesive section.
+             ============================================================ -->
+            <aside class="sidebar">
+              <!-- ============================================================
+                     PROMPT 4— SIDEBAR NAVIGATION
+
+                     "Create a sticky sidebar navigation.
+                     Categories: Soups, Rice Meals, Traditional Meals, Proteins.
+                     Requirements: Sticky Position, Smooth Navigation,
+                     Professional Appearance, Mobile Responsive."
+                     ============================================================ -->
+              <div class="sidebar__card">
+                <div class="sidebar__header">
+                  <h3 class="sidebar__title">Categories</h3>
+                  <p class="sidebar__subtitle">Browse by type</p>
+                </div>
+                <nav class="sidebar__nav">
+                  <a href="#soups" class="sidebar__link">
+                    <span class="sidebar__icon sidebar__icon--soups">🍲</span>
+                    <span class="sidebar__text">Soups</span>
+                    <span class="sidebar__count">7</span>
+                  </a>
+                  <a href="#rice-meals" class="sidebar__link">
+                    <span class="sidebar__icon sidebar__icon--rice">🍚</span>
+                    <span class="sidebar__text">Rice Meals</span>
+                    <span class="sidebar__count">2</span>
+                  </a>
+                  <a href="#traditional-meals" class="sidebar__link">
+                    <span class="sidebar__icon sidebar__icon--traditional"
+                      >🥘</span
+                    >
+                    <span class="sidebar__text">Traditional Meals</span>
+                    <span class="sidebar__count">4</span>
+                  </a>
+                  <a href="#proteins" class="sidebar__link">
+                    <span class="sidebar__icon sidebar__icon--proteins"
+                      >🍗</span
+                    >
+                    <span class="sidebar__text">Proteins</span>
+                    <span class="sidebar__count">3</span>
+                  </a>
+                </nav>
+              </div>
+            </aside>
+
+            <!-- ============================================================
+                     PROMPT 5 — PRODUCT GRID
+                     "Desktop: 4 Cards Per Row. Tablet: 2 Cards Per Row.
+                     Mobile: 1 Card Per Row. Minimum: 16 Product Cards."
+
+                     PROMPT 6— PRODUCT DATA
+                     All 16 products with realistic Nigerian Naira pricing.
+
+                     PROMPT 7 — PRODUCT CARD COMPONENT
+                     Each card: Image, Name, Quantity, Original Price,
+                     Discount Badge, Discounted Price, Order Button.
+
+                     PROMPT 8 — FOOD IMAGE PLACEHOLDERS
+                     Each product includes an img tag with descriptive alt text.
+                     Replace each img's src with your local image path.
+                     ============================================================ -->
+            <div class="product-grid-wrapper">
+              <div class="product-grid">
+                <!-- SOUPS -->
+                <h3 class="category-heading" id="soups">
+                  <span class="category-label">Category</span>Soups
+                </h3>
+
+                <!-- Product 1: Egusi Soup -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <span class="product-card__badge">-15%</span>
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Egusi Soup
+                                    Alt: A bowl of thick rich egusi soup garnished with stockfish and crayfish, served with pounded yam
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/egusi-soup.jpg" alt="A bowl of thick rich egusi soup garnished with stockfish and crayfish, served with pounded yam" class="product-card__image" />
+                                -->
+                    <img
+                      src="images/EGUSI.jpeg"
+                      alt="A bowl of thick rich egusi soup garnished with stockfish and crayfish, served with pounded yam"
+                      class="product-card__image"
+                    /><span
+                      class="product-card__badge"
+                      aria-label="14 percent discount"
+                      >-14%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Egusi Soup</h4>
+                    <p class="product-card__quantity">Per Bowl</p>
+                    <p class="product-card__description">
+                      Thick, rich melon seed soup cooked with palm oil,
+                      stockfish, crayfish, and assorted meat.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;3,000</span>
+                      <span class="product-card__price-original"
+                        >&#8358;3,500</span
+                      >
+                    </div>
+                    <button class="product-card__order-btn">Order Now</button>
+                  </div>
+                </article>
+
+                <!-- Product 2: Ewedu Soup -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Ewedu Soup
+                                    Alt: A smooth green ewedu soup in a clay bowl beside stew and amala
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/ewedu-soup.jpg" alt="A smooth green ewedu soup in a clay bowl beside stew and amala" class="product-card__image" />
+                                -->
+                    <img
+                      src="images/EWEDU.jpeg"
+                      alt="A smooth green ewedu soup in a clay bowl beside stew and amala"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="20 percent discount"
+                      >-20%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Ewedu Soup</h4>
+                    <p class="product-card__quantity">Per Bowl</p>
+                    <p class="product-card__description">
+                      Silky smooth jute leaf soup, blended to perfection and
+                      served with complementary stew.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;2,000</span>
+                      <span class="product-card__price-original"
+                        >&#8358;2,500</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+                <!-- Product 3: Ora Soup -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Ora Soup
+                                    Alt: A steaming bowl of ora soup with thick texture and chunks of meat and fish
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/ora-soup.jpg" alt="A steaming bowl of ora soup with thick texture and chunks of meat and fish" class="product-card__image" />
+                                -->
+                    <img
+                      src="images/ORA.jpeg"
+                      alt="A steaming bowl of ora soup with thick texture and chunks of meat and fish"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="13 percent discount"
+                      >-13%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Ora Soup</h4>
+                    <p class="product-card__quantity">Per Bowl</p>
+                    <p class="product-card__description">
+                      Traditional Ora (Oha) soup made with tender oha leaves,
+                      cocoyam paste, and assorted meats.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;3,500</span>
+                      <span class="product-card__price-original"
+                        >&#8358;4,000</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Product 4: Edikaikong Soup -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Edikaikong Soup
+                                    Alt: A rich pot of edikaikong soup with waterleaf and pumpkin leaves visible, topped with periwinkles
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/edikaikong-soup.jpg" alt="A rich pot of edikaikong soup with waterleaf and pumpkin leaves visible, topped with periwinkles" class="product-card__image" />
+                                -->
+                    <img
+                      src="images/VEGETABLE.jpeg"
+                      alt="A rich pot of edikaikong soup with waterleaf and pumpkin leaves visible, topped with periwinkles"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="16 percent discount"
+                      >-16%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Edikaikong Soup</h4>
+                    <p class="product-card__quantity">Per Bowl</p>
+                    <p class="product-card__description">
+                      Premium Cross River vegetable soup with waterleaf, pumpkin
+                      leaves, stockfish, and periwinkles.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;3,800</span>
+                      <span class="product-card__price-original"
+                        >&#8358;4,500</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Product 5: Ogbono Soup -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Ogbono Soup
+                                    Alt: A draw soup of ogbono with okra pieces, meat, and stockfish in a deep bowl
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/ogbono-soup.jpg" alt="A draw soup of ogbono with okra pieces, meat, and stockfish in a deep bowl" class="product-card__image" />
+                                -->
+                    <img
+                      src="images/Ogbon.jpg"
+                      alt="A draw soup of ogbono with okra pieces, meat, and stockfish in a deep bowl"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="14 percent discount"
+                      >-14%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Ogbono Soup</h4>
+                    <p class="product-card__quantity">Per Bowl</p>
+                    <p class="product-card__description">
+                      Classic draw soup made from ground wild mango seeds,
+                      loaded with meat, fish, and okra.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;3,000</span>
+                      <span class="product-card__price-original"
+                        >&#8358;3,500</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Product 6: Okro Soup -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Okro Soup
+                                    Alt: A bowl of slimy okro soup with fresh okra slices, palm oil, and assorted meat
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/okro-soup.jpg" alt="A bowl of slimy okro soup with fresh okra slices, palm oil, and assorted meat" class="product-card__image" />
+                                -->
+                    <img
+                      src="images/OKRO.jpeg"
+                      alt="A bowl of slimy okro soup with fresh okra slices, palm oil, and assorted meat"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="17 percent discount"
+                      >-17%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Okro Soup</h4>
+                    <p class="product-card__quantity">Per Bowl</p>
+                    <p class="product-card__description">
+                      Fresh okra slices cooked in rich palm oil broth with
+                      smoked fish, crayfish, and goat meat.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;2,500</span>
+                      <span class="product-card__price-original"
+                        >&#8358;3,000</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+
+                <!-- ==================== RICE MEALS ==================== -->
+                <h3 id="rice-meals" class="category-heading">
+                  <span class="category-label">Category</span>
+                  Rice Meals
+                </h3>
+
+                <!-- Product 7: Jollof Rice -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Jollof Rice
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/jollof-rice.jpg" alt="A plate of perfectly cooked party jollof rice with a smoky red-orange color and grilled chicken" class="product-card__image" />
+                                -->
+                    <img
+                      src="images/JOLLOF-RICE.jpg"
+                      alt="A bowl of Nigerian jollof rice made with beef"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="20 percent discount"
+                      >-20%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Jollof Rice</h4>
+                    <p class="product-card__quantity">Per Plate</p>
+                    <p class="product-card__description">
+                      Iconic smoky party jollof rice cooked with tomato blend,
+                      scotch bonnet, and bay leaves.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;2,000</span>
+                      <span class="product-card__price-original"
+                        >&#8358;2,500</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Product 8: Fried Rice -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Fried Rice
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/fried-rice.jpg" alt="A colorful plate of Nigerian fried rice with mixed vegetables, eggs, and shrimp" class="product-card__image" />
+                                -->
+                    <img
+                      src="images/fried-rice.jpg"
+                      alt="A bowl of fried rice made with vegetable"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="17 percent discount"
+                      >-17%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Fried Rice</h4>
+                    <p class="product-card__quantity">Per Plate</p>
+                    <p class="product-card__description">
+                      Vibrant mixed vegetable fried rice with carrots, green
+                      beans, sweet corn, and liver.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;2,500</span>
+                      <span class="product-card__price-original"
+                        >&#8358;3,000</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+
+                <!-- ==================== TRADITIONAL MEALS ==================== -->
+                <h3 id="traditional-meals" class="category-heading">
+                  <span class="category-label">Category</span>
+                  Traditional Meals
+                </h3>
+
+                <!-- Product 9: Porridge Yam -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Porridge Yam
+                                    Alt: A plate of yellow porridge yam with palm oil, vegetables, and smoked fish
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/porridge-yam.jpg" alt="A plate of yellow porridge yam with palm oil, vegetables, and smoked fish" class="product-card__image" />
+                                -->
+                    <img
+                      src="images/PORRIDGE.jpeg"
+                      alt="plate of yellow porridge yam with palm oil, vegetables, and smoked fish"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="15 percent discount"
+                      >-15%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Porridge Yam</h4>
+                    <p class="product-card__quantity">Per Portion</p>
+                    <p class="product-card__description">
+                      Soft yam chunks simmered in rich palm oil sauce with
+                      spinach, crayfish, and smoked fish.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;1,700</span>
+                      <span class="product-card__price-original"
+                        >&#8358;2,000</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Product 10: Porridge Beans -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Porridge Beans
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/porridge-beans.jpg" />
+                                -->
+                    <img
+                      src="images/BEANS.jpeg"
+                      alt="A plate of beans made with oil adn garnished with fried plantain"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="17 percent discount"
+                      >-17%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Porridge Beans</h4>
+                    <p class="product-card__quantity">Per Portion</p>
+                    <p class="product-card__description">
+                      Creamy honey beans (ewa oloyin) cooked with palm oil,
+                      onions, and seasoned to perfection.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;1,500</span>
+                      <span class="product-card__price-original"
+                        >&#8358;1,800</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Product 11: Abacha -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Abacha
+                                    Alt: A colorful plate of Abacha (African salad) with ugba, garden egg, and ponmo
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/abacha.jpg"/>
+                                -->
+                    <img
+                      src="images/ABACHA.jpeg"
+                      alt="A plate of Abacha with kpomo and sliced green vegetable"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="20 percent discount"
+                      >-20%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Abacha</h4>
+                    <p class="product-card__quantity">Per Wrap</p>
+                    <p class="product-card__description">
+                      Traditional Igbo African salad made with shredded cassava,
+                      ugba, garden egg, and spicy palm oil dressing.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;2,000</span>
+                      <span class="product-card__price-original"
+                        >&#8358;2,500</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+
+                <!-- ==================== PROTEINS ==================== -->
+                <h3 id="proteins" class="category-heading">
+                  <span class="category-label">Category</span>
+                  Proteins
+                </h3>
+
+                <!-- Product 12: Nkwobi -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Nkwobi
+                                    Alt: A traditional wooden bowl of nkwobi (spicy cow foot) with utazi leaves and onion rings
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/nkwobi.jpg" alt="A traditional wooden bowl of nkwobi (spicy cow foot) with utazi leaves and onion rings" class="product-card__image" />
+                                 -->
+                    <img
+                      src="images/NKWOBI.jpeg"
+                      alt="A traditional wooden bowl of nkwobi (spicy cow foot) with utazi leaves and onion rings"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="16 percent discount"
+                      >-16%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Nkwobi</h4>
+                    <p class="product-card__quantity">Per Bowl</p>
+                    <p class="product-card__description">
+                      Spicy seasoned cow foot cooked in rich palm oil sauce with
+                      utazi leaves and crunchy onion rings.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;4,200</span>
+                      <span class="product-card__price-original"
+                        >&#8358;5,000</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Product 13: Fried Chicken -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Fried Chicken
+                                    Alt: Crispy golden fried chicken pieces served with pepper sauce in a bowl
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/fried-chicken.jpg" alt="Crispy golden fried chicken pieces served with pepper sauce in a bowl" class="product-card__image" />
+                                -->
+                    <img
+                      src="images/CHICKEN.jpeg"
+                      alt="Crispy golden fried chicken pieces served with pepper sauce in a bowl"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="20 percent discount"
+                      >-20%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Fried Chicken</h4>
+                    <p class="product-card__quantity">Per Piece</p>
+                    <p class="product-card__description">
+                      Perfectly seasoned and deep-fried chicken with a crunchy
+                      exterior and juicy, tender interior.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;2,800</span>
+                      <span class="product-card__price-original"
+                        >&#8358;3,500</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Product 14: Kpomo -->
+                <article class="product-card">
+                  <div class="product-card__image-wrapper">
+                    <!--
+                                    PROMPT 8 — FOOD IMAGE
+                                    Image: Kpomo
+                                    Alt: A plate of seasoned kpomo (cow skin) in spicy pepper sauce with onions
+                                    Source: To be replaced with local image
+                                    Replace: <img src="images/kpomo.jpg" alt="A plate of seasoned kpomo (cow skin) in spicy pepper sauce with onions" class="product-card__image" />
+                                -->
+                    <img
+                      src="images/KANDA.jpeg"
+                      alt="A plate of seasoned kpomo (cow skin) in spicy pepper sauce with onions"
+                      class="product-card__image"
+                    />
+                    <span
+                      class="product-card__badge"
+                      aria-label="15 percent discount"
+                      >-15%</span
+                    >
+                  </div>
+                  <div class="product-card__body">
+                    <h4 class="product-card__name">Kpomo</h4>
+                    <p class="product-card__quantity">Per Portion</p>
+                    <p class="product-card__description">
+                      Tender processed cow skin simmered in a spicy pepper sauce
+                      with onions and aromatic spices.
+                    </p>
+                    <div class="product-card__pricing">
+                      <span class="product-card__price">&#8358;1,700</span>
+                      <span class="product-card__price-original"
+                        >&#8358;2,000</span
+                      >
+                    </div>
+                    <button type="button" class="product-card__order-btn">
+                      Order Now
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+         PROMPT 9 — STICKY FOOTER
+
+         "Create a sticky footer. Include: Facebook, Instagram, TikTok,
+         X, YouTube, WhatsApp. Also Include: Contact Information,
+         Quick Links, Copyright Notice. Requirements: Sticky Bottom,
+         Dark Red Background, White Text, Gold Hover Effects,
+         Responsive Layout."
+         ============================================================ -->
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand">
+            <img
+              src="images/LOGO.jpeg"
+              alt="MamaPutOnline Logo"
+              class="brand-logo"
+            />
+            <div class="brand-name">
+              <strong
+                >MamaPut<span class="brand-name-span">Online</span></strong
+              >
+            </div>
+          </a>
+          <p>
+            Bringing the authentic taste of Nigeria to your doorstep. Fresh,
+            homemade meals prepared with love and delivered with care.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#products">Menu</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact area from Site 2 -->
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <ul class="footer-contact">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              4 Udokwu Pocket Layout, Thinker's Corner, Enugu, Nigeria
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              +2348103681594
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              support@mamaputonline.com
+            </li>
+          </ul>
+          <div class="social-row">
+            <a href="#" aria-label="Facebook"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path></svg
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                ></path></svg
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>
+          &copy; 2026 <strong>MamaPutOnline</strong>. All rights reserved.
+          Authentic Nigerian meals, delivered with love.
+        </p>
+        <div class="legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

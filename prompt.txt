@@ -1,0 +1,55 @@
+Act as a frontend engineer, build a landing page for an online takeaway Nigerian cooked meal restaurant;
+
+            PROMPT 1 — STICKY NAVIGATION BAR
+
+            "Create a sticky responsive navigation bar.
+            Left Section: MamaPutOnline Logo
+            Center Section: Products, Services, Customer Service, Contact Us
+            Right Section: Search Input Field
+            Requirements: Dark Red Background, White Text, Gold Hover Effects,
+            Sticky Top Position, Mobile Responsive, Semantic HTML".
+
+             PROMPT 2 — HERO SECTION
+
+             "Create a modern responsive Hero Section.
+             Height: Minimum 30vh. Width: 100%. Layout: Two Columns.
+             Left Side: High-quality image of steaming Nigerian food.
+             Right Side: Large heading 'Authentic Nigerian Meals Delivered 
+             Fresh To Your Doorstep', Supporting text, CTA Button 'Order Now'.
+             Use modern typography and strong visual hierarchy."
+
+              PROMPT 3. PRODUCT SHOWCASE SECTION (Wrapper - From Site 2)
+             Contains Sidebar + Product Grid
+
+
+            PROMPT 4— SIDEBAR NAVIGATION
+
+             "Create a sticky sidebar navigation.
+             Categories: Soups, Rice Meals, Traditional Meals, Proteins.
+             Requirements: Sticky Position, Smooth Navigation,
+             Professional Appearance, Mobile Responsive.
+
+             PROMPT 5 — PRODUCT GRID
+                     "Desktop: 4 Cards Per Row. Tablet: 2 Cards Per Row.
+                     Mobile: 1 Card Per Row. Minimum: 16 Product Cards."
+
+             PROMPT 6— PRODUCT DATA
+                     All 16 products with realistic Nigerian Naira pricing.
+
+             PROMPT 7 — PRODUCT CARD COMPONENT
+                     Each card: Image, Name, Quantity, Original Price,
+                     Discount Badge, Discounted Price, Order Button.
+
+             PROMPT 8 — FOOD IMAGE PLACEHOLDERS
+                     Each product includes an img tag with descriptive alt text.
+                     Replace each img's src with your local image path.
+            
+             PROMPT 9 — STICKY FOOTER
+
+              "Create a sticky footer. Include: Facebook, Instagram, TikTok,
+              X, YouTube, WhatsApp. Also Include: Contact Information,
+              Quick Links, Copyright Notice. Requirements: Sticky Bottom,
+              Dark Red Background, White Text, Gold Hover Effects,
+              Responsive Layout.
+
+
